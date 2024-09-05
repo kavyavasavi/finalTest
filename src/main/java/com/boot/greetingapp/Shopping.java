@@ -6,23 +6,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
-public class GreetingappApplication {
+public class Shopping {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GreetingappApplication.class, args);
+		SpringApplication.run(Shopping.class, args);
 	}
 
-	@GetMapping("/welcome")
-	public String welcome() {
-		return "welcome to spring boot greeting app";
+	@GetMapping("/item1")
+	public String item1() {
+		return "Happy to show you a tv";
 	}
-	@GetMapping("/greeting")
-	public String greeting() {
-		return "greetings from spring boot greeting app";
+	@GetMapping("/item2")
+	public String item2() {
+		return "happy to show you a fridge";
 	}
-	@GetMapping("/hello")
-	public String hello() {
-		return "hello from spring boot greeting app";
+	@GetMapping("/item3")
+	public String item3() {
+		return "happy ro show you a speaker";
 	}
 
 }
